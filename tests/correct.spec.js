@@ -89,8 +89,8 @@ test("Tamil Transliteration - Sequential Positive Tests", async ({ page }) => {
     { input: "avan than atha senjaan", expected: "அவன் தன அத செஞ்சான்" },
     { input: "naan entaiku varanuma", expected: "நான் இண்டைக்கு வரணுமா" },
 
-        // {input:'',expected:' '},
-    // {input:' ',expected:''},
+        {input:'',expected:' '},
+    {input:' ',expected:''},
     {input:'keels, Jung man',expected:'No tamil conversion with validation message'},
     {input:'cxvcbcvncvb',expected:'No tamil conversion with validation message'},
     {input:'643568',expected:'No tamil conversion with validation message '},
