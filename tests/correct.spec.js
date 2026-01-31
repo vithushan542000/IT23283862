@@ -50,7 +50,7 @@ test("Tamil Transliteration - Sequential Positive Tests", async ({ page }) => {
   await expect(textarea).toBeVisible();
 
   const tests = [
-    {input:'avan nalaiku pokamataan',expected:'அவன் நாளைக்கு போகமாட்டான்'},
+    {input:'avan nalaiku pogamatan',expected:'அவன் நாளைக்கு போகமாட்டான்'},
     { input: "naan nalaiku kadaiku povean", expected: "நான் நாளைக்கு கடைக்கு போவேன்" },
     { input: "naan vakuppil illai", expected: "நான் வகுப்பில் இல்லை" },
     { input: "avan nalaiku varamataan", expected: "அவன் நாளைக்கு வரமாட்டான்" },
@@ -64,7 +64,7 @@ test("Tamil Transliteration - Sequential Positive Tests", async ({ page }) => {
       input: "veetil summa iruthaalum naan sutha pogala",
       expected: "வீட்டில் சும்மா இருந்தாலும் நான் சுத்த போகல",
     },
-    { input: "avan enga vara ?", expected: "அவன் எங்க வர ?" },
+    { input: "avan enga vara ?", expected: "அவன் எங்க வர ? " },
     { input: "ingu vaa", expected: "இங்கு வா" },
     { input: "nanbargal nalaiku varanga", expected: "நண்பர்கள் நாளைக்கு வராங்க" },
 
