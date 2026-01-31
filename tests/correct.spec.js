@@ -88,6 +88,18 @@ test("Tamil Transliteration - Sequential Positive Tests", async ({ page }) => {
     { input: "antha velai mudichutu vaa", expected: "அந்த வேலை முடிச்சுட்டு வா" },
     { input: "avan than atha senjaan", expected: "அவன் தன அத செஞ்சான்" },
     { input: "naan entaiku varanuma", expected: "நான் இண்டைக்கு வரணுமா" },
+
+        // {input:'',expected:' '},
+    // {input:' ',expected:''},
+    {input:'keels, Jung man',expected:'No tamil conversion with validation message'},
+    {input:'cxvcbcvncvb',expected:'No tamil conversion with validation message'},
+    {input:'643568',expected:'No tamil conversion with validation message '},
+    {input:'*&#@$&@()',expected:'No tamil conversion with validation message '},
+    {input:'veedulaakalaila',expected:'Correct tamil sentence with proper word separation'},
+    {input:'avan email potaan',expected:'tamil convention'},
+    {input:'enaku thips RS 345 kidaikuma',expected:'currancy symbol and  tamil letter transalation'},
+    {input:'*clear the input field',expected:'Tamil output should clearly represent a future tense sentence'},
+    {input:'naan veeda pokala',expected:''}
   ];
 
   for (let i = 0; i < tests.length; i++) {
